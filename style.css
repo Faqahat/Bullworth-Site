@@ -1,0 +1,175 @@
+body {
+  /* Location of the image */
+  background-image: url(background.jpg);
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+html, body, .container {
+  height: 100%;
+}
+
+/* Reset */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Basic */
+body {
+  font: 18px/23px "Lato", sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+@font-face {font-family: "Narcissus"; src: url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.eot"); src: url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.woff") format("woff"), url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/146c398456e6a22b45102120ae8a7679.svg#Narcissus") format("svg"); }
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Narcissus";
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.twitter {
+  color: #1dcaff;
+  text-shadow: none;
+}
+
+a.youtube {
+  color: #ea1920;
+  text-shadow: none;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+/* Special */
+.sub-title {
+  margin: 30px auto;
+  font-size: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.sub-title span {
+  font-size: 18px;
+  line-height: 1px;
+  text-transform: initial;
+}
+.ipbox {
+  border-radius: 10px;
+  /* border: solid 2px #585D6A; */
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  border: dashed 2px #ffffff;
+  border-image-source: url(./border-box.png);
+  border-image-slice: 2;
+  border-image-repeat: round;
+}
+.top-logo
+{
+    background-image: url("./logo.png");
+    background-size: 255px;
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 255px;
+    margin-top: 10px;
+}
+.title
+{
+    background-image: url("./title.png");
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 800px;
+    margin-top: 20px;
+}
+.stitle
+{
+    background-image: url("./title2.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 350px;
+    margin-top: 30px;
+}
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #cafaea;
+  border: 1px solid #cafaea;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 967px) {
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .sub-title span {
+    font-size: 17px;
+    line-height: 1px;
+    text-transform: capitalize;
+  }
+}
+
+.newsletter {
+  overflow: hidden;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+}
